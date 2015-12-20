@@ -217,7 +217,7 @@ body
   float: right;
   width: 40%;
   height: 200px;
-  max-width: 1200px;
+  max-width: 900px;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -246,11 +246,29 @@ body
   height: 400px;
 }
 
-.mesa-ad
+.sidebar-right-links ul
+{
+  list-style-type: none;
+}
+
+.sidebar-right-links li
+{
+  transition: box-shadow .3s ease;
+  background-color: #1c1c1c;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.sidebar-right-links a
 {
   text-decoration: none;
-  color: black;
-  text-align: center;
+  color: white;
+}
+
+.sidebar-right-links li:hover
+{
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .sidebar-right ul
@@ -288,9 +306,9 @@ h4.sub-title::before {
 .content-box
 {
   margin-top: 5%;
-  max-width: 1200px;
-  margin-left: 20%;
-  margin-right: 20%;
+  max-width: 900px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .full-box {
