@@ -217,6 +217,9 @@ body
   float: right;
   width: 40%;
   height: 200px;
+  max-width: 1200px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .sidebar-right
@@ -285,6 +288,7 @@ h4.sub-title::before {
 .content-box
 {
   margin-top: 5%;
+  max-width: 1200px;
   margin-left: 20%;
   margin-right: 20%;
 }
