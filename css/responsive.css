@@ -1,0 +1,171 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+.container {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: auto;
+}
+[class*="col-"] {
+  float:left;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+[class*='col-'] {
+  padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+.col-2 {
+  width: 20%;
+}
+.col-3 {
+  width: 30%;
+}
+.col-4 {
+  width: 40%;
+}
+.col-5 {
+  width: 50%;
+}
+.col-7{
+  width: 70%;
+}
+.col-8 {
+  width: 80%;
+}
+
+/* menu bar */
+
+.header
+{
+  position: relative;
+  height: 150px;
+  min-height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.right-logo
+{
+  float: right;
+  padding: 10px;
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 5px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.header ul
+{
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: .3em;
+}
+
+.header ul a
+{
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 15px;
+  background-color: black;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.header ul a:hover
+{
+  background-color: white;
+  color: black;
+}
+
+.header ul li
+{
+  position: relative;
+  float: left;
+  margin: 0;
+  pading: 0;
+  background-color: black;
+}
+
+.header ul ul
+{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+
+.header ul ul li
+{
+  float: none;
+  width: 200px;
+  padding: 5px;
+}
+
+.header ul ul a
+{
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+.header ul ul ul
+{
+  top: 0;
+  left: 100%;
+}
+
+.header ul li:hover > ul
+{
+  display: block;
+}
+
+/* pseudo elements */
+
+.img-back:after {
+  background-image: url("https://pixabay.com/static/uploads/photo/2014/12/03/05/53/string-555070_960_720.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  content: '';
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -100px;
+  -webkit-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  transform: skewY(5deg);
+  width: 100vw;
+  z-index: -1;
+}
