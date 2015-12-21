@@ -160,6 +160,32 @@ body {
 {
   font-size: .5em;
 }
+
+/* footer */
+
+.footer {
+  height: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li {
+  border-bottom: 1px solid black;
+  margin-left: 3em;
+  padding: 1em;
+  display: inline;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 /* svg animation */
 
 .svg-wrapper {
@@ -233,12 +259,23 @@ body {
 }
 
 .grey-lines-after:after {
-  content: "";
-  top: 25px;
-  right: -50px;
+  content: " ";
+  top: 2500px;
+  right: 100px;
   background-image: url("http://www.commentnation.com/hotlinks/gray_and_white_diagonal_stripes_background_seamless.gif");
   height: 400px;
   width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+}
+
+.grey-lines-before:before {
+  content: " ";
+  top: 700px;
+  background-image: url("http://www.commentnation.com/hotlinks/gray_and_white_diagonal_stripes_background_seamless.gif");
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   position: absolute;
   z-index: -10;
