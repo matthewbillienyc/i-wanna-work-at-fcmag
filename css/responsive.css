@@ -258,6 +258,21 @@ body {
   z-index: -2;
 }
 
+.third-block:before {
+  background-color: #cccccc;
+  content: "";
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  -webkit-transform: skeyY(5deg);
+  -ms-transform: skeyY(5deg);
+  transform: skewY(5deg);
+  width: 100vw;
+  z-index: -2;
+}
+
 .grey-lines-after:after {
   content: " ";
   top: 2500px;
@@ -421,4 +436,13 @@ body {
 
 .full-box img:hover {
   opacity: 0.5;
+}
+
+.left-side {
+  width: 100%;
+}
+
+.left-side img {
+  width: 100%;
+  height: auto;
 }

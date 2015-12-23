@@ -1,1 +1,1 @@
-<?php include_once("responsive.html"); ?>
+<?php include_once("test.html"); ?>
